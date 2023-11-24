@@ -1,10 +1,11 @@
 import Header from "./layout/Header";
+import Home from "./page/Home";
 
 export default function App() {
   return (
     <div>
       <Header />
-      <h1 className="text-3xl font-bold underline text-center">Hello world!</h1>
+      <Home />
     </div>
   );
 }
