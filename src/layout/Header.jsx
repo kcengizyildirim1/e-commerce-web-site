@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import Dropdown from "../components/Dropdown";
+import Dropdown from "../components/navbar/Dropdown";
 
 const Header = () => {
   return (
@@ -33,7 +33,7 @@ const Header = () => {
       <div className="flex justify-between py-6 px-8 flex-wrap">
         <div className="flex gap-[5rem]">
           <h1>Brand Name</h1>
-          <nav className="flex gap-5">
+          <nav className="flex gap-5 flex-wrap">
             <NavLink to="#">Home</NavLink>
             <span>
               <Dropdown />
