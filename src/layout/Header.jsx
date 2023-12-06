@@ -10,7 +10,10 @@ const Header = () => {
             <i className="fa-solid fa-phone mr-3"></i>
             (225) 555-0118
           </h6>
-          <h6>michelle.rivera@example.com</h6>
+          <h6>
+            <i className="fa-regular fa-envelope mr-3 mt-2"></i>
+            michelle.rivera@example.com
+          </h6>
           <h6>Follow Us and get a chance to win 80% off</h6>
 
           <div className="flex gap-4 justify-center">
@@ -34,10 +37,10 @@ const Header = () => {
         <div className="flex gap-[5rem]">
           <h1>Brand Name</h1>
           <nav className="flex gap-5 flex-wrap">
-            <NavLink to="#">Home</NavLink>
-            <span>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/productlist">
               <Dropdown />
-            </span>
+            </NavLink>
             <NavLink to="#">About</NavLink>
             <NavLink to="#">Blog</NavLink>
             <NavLink to="#">Contact</NavLink>
