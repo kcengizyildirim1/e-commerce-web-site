@@ -1,8 +1,8 @@
-import vector from "../../../public/assets/Shapes/vector.png";
-import vector1 from "../../../public/assets/Shapes/vector-1.png";
-import vector2 from "../../../public/assets/Shapes/vector-2.png";
-import vector3 from "../../../public/assets/Shapes/vector-3.png";
-import vector4 from "../../../public/assets/Shapes/vector-4.png";
+import vector from "../../../public/assets/Shapes/Vector.png";
+import vector1 from "../../../public/assets/Shapes/Vector-1.png";
+import vector2 from "../../../public/assets/Shapes/Vector-2.png";
+import vector3 from "../../../public/assets/Shapes/Vector-3.png";
+import vector4 from "../../../public/assets/Shapes/Vector-4.png";
 
 const Icon = () => {
   return (
