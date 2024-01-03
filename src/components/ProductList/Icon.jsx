@@ -8,11 +8,11 @@ const Icon = () => {
   return (
     <div className="bg-[#FAFAFA]">
       <div className="flex justify-between gap-44 py-12  object-cover w-[80%] mx-auto flex-wrap">
-        <img src={vector} alt="" />
-        <img src={vector1} alt="" />
-        <img src={vector2} alt="" />
-        <img src={vector3} alt="" />
-        <img src={vector4} alt="" />
+        <img src={vector} alt="" className="object-contain" />
+        <img src={vector1} alt="" className="object-contain" />
+        <img src={vector2} alt="" className="object-contain" />
+        <img src={vector3} alt="" className="object-contain" />
+        <img src={vector4} alt="" className="object-contain" />
       </div>
     </div>
   );
