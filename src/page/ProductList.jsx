@@ -3,20 +3,9 @@ import cardCategory1 from "../../public/assets/Productlist/card-cover1.png";
 import cardCategory2 from "../../public/assets/Productlist/card-cover2.png";
 import cardCategory3 from "../../public/assets/Productlist/card-cover3.png";
 import cardCategory4 from "../../public/assets/Productlist/card-cover4.png";
-// PRODUCT LIST RESIMLERI
-import shopList1 from "../../public/assets/ShopList/product-cover1.png";
-import shopList2 from "../../public/assets/ShopList/product-cover2.png";
-import shopList3 from "../../public/assets/ShopList/product-cover3.png";
-import shopList4 from "../../public/assets/ShopList/product-cover4.png";
-import shopList5 from "../../public/assets/ShopList/product-cover5.png";
-import shopList6 from "../../public/assets/ShopList/product-cover6.png";
-import shopList7 from "../../public/assets/ShopList/product-cover7.png";
-import shopList8 from "../../public/assets/ShopList/product-cover8.png";
-import shopList9 from "../../public/assets/ShopList/product-cover9.png";
-import shopList10 from "../../public/assets/ShopList/product-cover10.png";
-import shopList11 from "../../public/assets/ShopList/product-cover11.png";
-import shopList12 from "../../public/assets/ShopList/product-cover12.png";
+import ShopList from "../data/ShopList";
 import Icon from "../components/ProductList/Icon";
+import { Link } from "react-router-dom";
 
 const ProductList = () => {
   const productCategory = [
@@ -34,93 +23,6 @@ const ProductList = () => {
     },
   ];
 
-  const shopList = [
-    {
-      img: shopList1,
-      title: "Graphic Design",
-      category: "English Department",
-      price: "$16.48",
-      sale: "$6.48",
-    },
-    {
-      img: shopList2,
-      title: "Graphic Design",
-      category: "English Department",
-      price: "$16.48",
-      sale: "$6.48",
-    },
-    {
-      img: shopList3,
-      title: "Graphic Design",
-      category: "English Department",
-      price: "$16.48",
-      sale: "$6.48",
-    },
-    {
-      img: shopList4,
-      title: "Graphic Design",
-      category: "English Department",
-      price: "$16.48",
-      sale: "$6.48",
-    },
-    {
-      img: shopList5,
-      title: "Graphic Design",
-      category: "English Department",
-      price: "$16.48",
-      sale: "$6.48",
-    },
-    {
-      img: shopList6,
-      title: "Graphic Design",
-      category: "English Department",
-      price: "$16.48",
-      sale: "$6.48",
-    },
-    {
-      img: shopList7,
-      title: "Graphic Design",
-      category: "English Department",
-      price: "$16.48",
-      sale: "$6.48",
-    },
-    {
-      img: shopList8,
-      title: "Graphic Design",
-      category: "English Department",
-      price: "$16.48",
-      sale: "$6.48",
-    },
-    {
-      img: shopList9,
-      title: "Graphic Design",
-      category: "English Department",
-      price: "$16.48",
-      sale: "$6.48",
-    },
-    {
-      img: shopList10,
-      title: "Graphic Design",
-      category: "English Department",
-      price: "$16.48",
-      sale: "$6.48",
-    },
-    {
-      img: shopList11,
-      title: "Graphic Design",
-      category: "English Department",
-      price: "$16.48",
-      sale: "$6.48",
-    },
-    {
-      img: shopList12,
-      title: "Graphic Design",
-      category: "English Department",
-      price: "$16.48",
-      sale: "$6.48",
-    },
-  ];
-
   return (
     <div className="font-['Montserrat']">
       <div>
@@ -134,8 +36,8 @@ const ProductList = () => {
             </div>
           </div>
           <div className="flex gap-5 justify-between w-[90%] mx-auto flex-wrap mt-8">
-            {productCategory.map((item) => (
-              <div key={item} className="mx-auto relative">
+            {productCategory.map((item, index) => (
+              <div key={index} className="mx-auto relative">
                 <img
                   src={item.img}
                   className="w-[15rem] h-[15rem] object-cover mx-auto"
@@ -165,8 +67,8 @@ const ProductList = () => {
           </div>
         </div>
         <div className="flex flex-wrap gap-[48px] items-center justify-center w-[80%] py-[48px] m-auto bg-white">
-          {shopList.map((item) => (
-            <div key={item} className="flex flex-col w-80 ">
+          {ShopList.map((item, index) => (
+            <div className="flex flex-col w-80 shadow-lg" key={index}>
               <img src={item.img} className="w-[100%] object-cover" />
               <div className="flex flex-col items-center  gap-[10px] p-[25px]">
                 <h5 className="text-[16px] font-semibold">{item.title}</h5>
@@ -183,6 +85,9 @@ const ProductList = () => {
                   <i className="w-[1rem] h-[1rem] rounded-full bg-[#E77C40]"></i>
                   <i className="w-[1rem] h-[1rem] rounded-full bg-[#23856D]"></i>
                 </div>
+                <Link to={`/shopping/${item.id}`} key={index}>
+                  SEPETE EKLE
+                </Link>
               </div>
             </div>
           ))}
