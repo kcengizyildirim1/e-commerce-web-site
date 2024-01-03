@@ -24,7 +24,7 @@ const ProductCard = () => {
   return (
     <div className="flex justify-between gap-10 items-center flex-wrap">
       {data.map((item) => (
-        <div key={item} className="max-w-sm mx-auto shadow-lg">
+        <div key={item.p} className="max-w-sm mx-auto shadow-lg">
           <div className=" relative">
             <img
               className="img-absolute object-cover w-[100%]"

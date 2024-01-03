@@ -127,8 +127,8 @@ function BestSeller() {
       </div>
       <div>
         <div className="flex gap-[50px] flex-wrap items-center justify-center pb-[80px] max-w-[90rem] mx-auto">
-          {items.map((item) => (
-            <div key={item.key} className="">
+          {items.map((item, index) => (
+            <div key={index} className="">
               <img
                 src={item.img}
                 alt={item.product}

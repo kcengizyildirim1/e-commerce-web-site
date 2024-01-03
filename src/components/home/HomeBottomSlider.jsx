@@ -3,7 +3,7 @@ import pic1 from "../../../public/assets/BottomSlider/pic1.png";
 
 const HomeBottomSlider = () => {
   return (
-    <Carousel className="h-[715px]">
+    <Carousel className="h-[715px] overflow-hidden">
       <div className="relative h-full w-full bg-[#23856D]">
         <img
           src={pic1}
@@ -11,7 +11,7 @@ const HomeBottomSlider = () => {
           className=" object-cover absolute top-[86px] right-[215px]"
         />
         <div className="absolute inset-0 grid h-full w-full place-items-center  ">
-          <div className=" w-[30rem] text-center mr-[20rem]">
+          <div className=" w-[30rem] text-center mr-[20rem] ">
             <Typography
               variant="h1"
               color="white"
@@ -37,7 +37,7 @@ const HomeBottomSlider = () => {
       <div className="relative h-full w-full">
         <img alt="image 3" className="h-full w-full object-cover" />
         <div className="absolute inset-0 grid h-full w-full items-end bg-black/75">
-          <div className="w-3/4 pl-12 pb-12 md:w-2/4 md:pl-20 md:pb-20 lg:pl-32 lg:pb-32">
+          <div className="w-3/4 pl-12 pb-12 md:w-2/4 md:pl-20 md:pb-20 lg:pl-32 lg:pb-32 lg:w-auto md:mx-auto md:pr-16">
             <Typography
               variant="h1"
               color="white"
