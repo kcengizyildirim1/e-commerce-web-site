@@ -33,22 +33,22 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between py-6 px-8 flex-wrap">
-        <div className="flex gap-[5rem]">
+      <div className="flex justify-between py-6 px-8 flex-wrap lg:flex-col lg:gap-4">
+        <div className="flex gap-[5rem] lg:flex-col lg:gap-2 lg:mx-auto">
           <h1>Brand Name</h1>
-          <nav className="flex gap-5 flex-wrap">
+          <nav className="flex gap-5 flex-wrap lg:flex-col lg:gap-2">
             <NavLink to="/">Home</NavLink>
-            <NavLink to="/productlist">
+            <NavLink to="/shopping">
               <Dropdown />
             </NavLink>
-            <NavLink to="#">About</NavLink>
-            <NavLink to="#">Blog</NavLink>
-            <NavLink to="#">Contact</NavLink>
+            <NavLink to="/about">About</NavLink>
+            <NavLink to="/team">Team</NavLink>
+            <NavLink to="/contact">Contact</NavLink>
             <NavLink to="#">Pages</NavLink>
           </nav>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 lg:mx-auto">
           <span>
             <i className="fa-regular fa-user mx-2"></i>Login
           </span>
