@@ -6,7 +6,8 @@ import ProductList from "./page/ProductList";
 import Contact from "./page/Contact";
 import About from "./page/About";
 import Team from "./page/Team";
-import Product from "./page/Product";
+import SingleProduct from "./page/SingleProduct";
+import SignUp from "./page/SignUp";
 
 export default function App() {
   return (
@@ -28,8 +29,11 @@ export default function App() {
         <Route exact path="/team">
           <Team />
         </Route>
-        <Route path="/shopping/:productId">
-          <Product />
+        <Route exact path="/shopping/:productId">
+          <SingleProduct />
+        </Route>
+        <Route exact path="/signup">
+          <SignUp />
         </Route>
       </Switch>
       <Footer />

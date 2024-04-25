@@ -53,7 +53,7 @@ const Header = () => {
             <i className="fa-regular fa-user mx-2"></i>Login
           </span>
           <span>/</span>
-          <span>Register</span>
+          <NavLink to="/signup">Register</NavLink>
           <i className="fa-solid fa-search"></i>
           <i className="fa-solid fa-cart-shopping"></i>
         </div>

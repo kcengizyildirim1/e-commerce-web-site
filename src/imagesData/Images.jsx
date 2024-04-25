@@ -14,12 +14,7 @@ import productCard8 from "../../public/assets/BestsellerImages/productImages/pro
 
 export const Images = {
   shapes: {
-    ellipses: {
-      blueEllipse,
-      greenEllipse,
-      orangeEllipse,
-      blackEllipse,
-    },
+    ellipses: [blueEllipse, greenEllipse, orangeEllipse, blackEllipse],
   },
   homeProductCard: {
     productCard1,
